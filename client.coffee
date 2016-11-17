@@ -31,5 +31,5 @@ wrapMethod = (method, client) ->
 
     client
 
-for item in ['BasicAuthSecurity', 'WSSecurity', 'WSSecurityCert', 'ClientSSLSecurity', 'BearerSecurity']
+for item in ['BasicAuthSecurity', 'WSSecurity', 'WSSecurityCert', 'ClientSSLSecurity', 'ClientSSLSecurityPFX', 'BearerSecurity']
   @Soap[item] = soap[item]

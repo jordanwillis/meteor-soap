@@ -67,7 +67,9 @@ var soapServer = Soap.listen('/soap', service, wsdl);
 Where *SecurityProtocol* is one of
 * BasicAuthSecurity
 * WSSecurity
+* WSSecurityCert
 * ClientSSLSecurity
+* ClientSSLSecurityPFX
 * BearerSecurity
 
 Used in calls to `Client.setSecurity`

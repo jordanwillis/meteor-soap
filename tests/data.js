@@ -4,6 +4,7 @@ testData = {
     'WSSecurity',
     'WSSecurityCert',
     'ClientSSLSecurity',
+    'ClientSSLSecurityPFX',
     'BearerSecurity',
     'createClient',
     'listen'

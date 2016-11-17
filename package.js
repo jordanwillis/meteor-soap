@@ -1,13 +1,13 @@
 Package.describe({
   name: 'zardak:soap',
-  version: '0.2.6',
+  version: '0.2.7',
   summary: 'Wrapped npm soap package',
   git: 'https://github.com/zardak/meteor-soap',
   documentation: 'README.md'
 });
 
 Npm.depends({
-  soap: '0.16.0'
+  soap: '0.17.0'
 });
 
 Package.onUse(function(api) {
