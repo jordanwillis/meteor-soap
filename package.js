@@ -13,6 +13,7 @@ Npm.depends({
 Package.onUse(function(api) {
   api.versionsFrom('0.9.3');
   api.use(['coffeescript', 'webapp']);
+  api.export('Soap', 'server');
   api.addFiles('client.coffee', 'server');
   api.addFiles('server.coffee', 'server');
 });

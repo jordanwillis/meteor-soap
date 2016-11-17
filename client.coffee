@@ -10,7 +10,7 @@ wrapMethod = (method, client) ->
     methodResult
 
 
-@Soap =
+Soap =
   createClient: (url, options) ->
     try
       client = Meteor.wrapAsync(soap.createClient, soap)(arguments...)
@@ -32,4 +32,4 @@ wrapMethod = (method, client) ->
     client
 
 for item in ['BasicAuthSecurity', 'WSSecurity', 'WSSecurityCert', 'ClientSSLSecurity', 'ClientSSLSecurityPFX', 'BearerSecurity']
-  @Soap[item] = soap[item]
+  Soap[item] = soap[item]

@@ -1,6 +1,6 @@
 soap = Npm.require 'soap'
 
-@Soap.listen = (path, services, wsdl) ->
+Soap.listen = (path, services, wsdl) ->
   serverStub =
     listeners: -> [
       (req, res) ->
